@@ -49,7 +49,6 @@ extern const char *program_invocation_short_name;
 #endif
 /* For argp-help.c.  */
 #define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 1
-
 #ifndef HAVE___COMPAR_FN_T
 #define HAVE___COMPAR_FN_T 1
 typedef int (*__compar_fn_t) (const void *, const void *);
@@ -163,6 +162,17 @@ strsep (char **stringp, const char *delim)
 }
 #endif
 
+#ifndef HAVE_DECL_STRERROR_R
+#define HAVE_DECL_STRERROR_R 1
+#endif
+
+#ifndef _GL_ATTRIBUTE_FORMAT_PRINTF
+#define _GL_ATTRIBUTE_FORMAT_PRINTF(a, b)
+#endif
+
+#ifndef _GL_ARG_NONNULL
+#define _GL_ARG_NONNULL(a)
+#endif
 /* Disable file locking unless all the features that glibc needs
    are available.  */
 #ifndef _GNU_SOURCE
