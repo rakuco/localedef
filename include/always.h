@@ -48,7 +48,7 @@ extern const char *program_invocation_name;
 extern const char *program_invocation_short_name;
 #endif
 /* For argp-help.c.  */
-#define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 1
+#define _GLIBCPP_USE_WCHAR_T 1
 #ifndef HAVE___COMPAR_FN_T
 #define HAVE___COMPAR_FN_T 1
 typedef int (*__compar_fn_t) (const void *, const void *);

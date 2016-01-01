@@ -22,6 +22,7 @@ DEFINES		= -DNO_SYSCONF \
 		  -DNO_UNCOMPRESS \
 		  -DLOCALE_PATH='$(localepath)' \
 		  -DLOCALEDIR='"$(localedir)"' \
+		  -DCOMPLOCALEDIR='"$(localedir)"' \
 		  -DLOCALE_ALIAS_PATH='"$(msgcatdir)"' \
 		  -DCHARMAP_PATH='"$(i18ndir)/charmaps"' \
 		  -DREPERTOIREMAP_PATH='"$(i18ndir)/repertoiremaps"' \
