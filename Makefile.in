@@ -126,11 +126,6 @@ vasprintf.o: $(srcdir)/vasprintf.c
 
 include glibc/localedata/SUPPORTED
 
-# Only install locale data if OPTION_EGLIBC_LOCALES is selected.
-ifneq ($(OPTION_EGLIBC_LOCALES),y)
-SUPPORTED-LOCALES :=
-endif
-
 INSTALL-SUPPORTED-LOCALES=$(addprefix install-, $(SUPPORTED-LOCALES))
 
 LOCALEDEF=\
