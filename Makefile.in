@@ -151,6 +151,6 @@ $(INSTALL-SUPPORTED-LOCALES): localedef$(EXEEXT) install-locales-dir
 	$(LOCALEDEF) --alias-file=glibc/intl/locale.alias \
 		     -i glibc/localedata/locales/$$input -c \
 		     -f glibc/localedata/charmaps/$$charset \
-		     $(addprefix --prefix=,$(install_root)) $$locale; \
-	echo ' done'; \
+		     $(addprefix --prefix=,$(install_root)) $$locale \
+	&& echo ' done'; \
 #----------------------------------------------------------------------------
