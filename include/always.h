@@ -201,5 +201,11 @@ strsep (char **stringp, const char *delim)
 #define fwrite_unlocked(BUF, SIZE, NELEM, FILE) fwrite (BUF, SIZE, NELEM, FILE)
 #endif
 
+#if __GNUC__ >= 3 || (__GNUC__ == 2 && __GNUC_MINOR__ >= 7)
+# define _GL_UNUSED __attribute__ ((__unused__))
+#else
+# define _GL_UNUSED
+#endif
+
 #include <stdbool.h>
 #include <stdint.h>
