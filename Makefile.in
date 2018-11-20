@@ -44,8 +44,8 @@ LOCALEDEF_OBJS	= charmap.o charmap-dir.o ld-address.o ld-collate.o \
 		  ld-ctype.o ld-identification.o ld-measurement.o \
 		  ld-messages.o ld-monetary.o ld-name.o ld-numeric.o \
 		  ld-paper.o ld-telephone.o ld-time.o linereader.o \
-		  localedef.o locarchive.o locfile.o record-status.o \
-		  repertoire.o simple-hash.o xmalloc.o xstrdup.o \
+		  localedef.o locarchive.o locfile.o repertoire.o \
+		  simple-hash.o xmalloc.o xstrdup.o \
 		  \
 		  argp-ba.o argp-eexst.o argp-fmtstream.o argp-help.o \
 		  argp-parse.o argp-pv.o argp-xinl.o error.o getopt.o \
